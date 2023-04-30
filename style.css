@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: #eff3f6;
+    font-family: fangsong;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: revert;
+    margin: 13% 26%;
+    background: white;
+    height: 350px;
+    filter: drop-shadow(2px 4px 6px lightgray);
+}
+
+.div-wrap {
+    text-align: center;
+    margin-top: inherit;
+}
+
+input#input-todos {
+    width: 350px;
+    padding: 5px;
+    margin: 15px 0px 15px 15px;
+}
+
+input#input-todos:active, input#input-todos:visited, input#input-todos:focus  {
+
+    border: solid lightskyblue;
+    background: #a5d3f6;
+}
+input#submit-todos {
+    width: 85px;
+    padding: 7px;
+    border: none;
+    background: #ff719f;
+}
+
+input#submit-todos:hover{
+    background: #a5d3f6;
+}

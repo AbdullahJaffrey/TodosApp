@@ -1,46 +1,24 @@
-document.getElementById('submit-btn').addEventListener("click",()=> {
-    const dob = document.getElementById('date').value
-    console.log(dob)
-  })
+const data_arr = [];
 
-const person = {
+document.getElementById('submit-todos').addEventListener('click', ()=>{
 
-    'name': 'Noah',
-    'class': 1,
-    'age': 2,
-    'subject' : ['Urdu', 'Science', 'Pakistan Studies', 'Swedish'],
-    'address' : {
-    'area' :  'Sollentuna',
-    'country': 'Sweden',
-    },
-    'extracurricularactivity' : ['football', 'jetsu']
+    var data = document.getElementById('input-todos').value;
+    document.querySelector("span").innerHTML = data;
 
+function Add_datavalue(){
+    if (data === ''){
+        document.getElementById('Message').innerText = 'Kindly, Enter some value!';
+        document.getElementById('Message').style.color = 'red';
+    }
+    else{
+        document.getElementById('Message').innerText = 'Thanks for adding';        
+        document.getElementById('Message').style.color = 'green';
+        document.getElementById('Task_content').innerText = data;
+        data_arr.push(data)
+
+    }
 }
 
-console.log(person.name)
-console.log(person.address.country)
-console.log(person.extracurricularactivity[1])
-console.log(person.subject[1] = 'Social Studies')
-console.log(Object.keys(person))
+Add_datavalue()
 
-const todos = []
-
-document.getElementById('todosubmit').addEventListener("click",()=> {
-    const todo_data = document.getElementById('todoinput').value
-    var data = []
-    function valueexist(){
-        if (todo_data === ''){
-            alert('No Value Inserted!')
-        }
-        else{
-            alert('Thanks for adding')
-            todos.push(todo_data)
-        }
-
-    document.write(todo_data)
-    }
-
-    valueexist();
-  })
-
-
+})
