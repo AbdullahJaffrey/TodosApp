@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    text-decoration: none;
 }
 
 body {
@@ -14,15 +14,16 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: revert;
-    margin: 13% 26%;
+    margin: 10% 30%;
     background: white;
-    height: 350px;
+    height: auto;
     filter: drop-shadow(2px 4px 6px lightgray);
 }
 
 .div-wrap {
     text-align: center;
     margin-top: inherit;
+    margin: 50px 0px;
 }
 
 input#input-todos {
@@ -40,9 +41,69 @@ input#submit-todos {
     width: 85px;
     padding: 7px;
     border: none;
+    margin-right: 5px;
     background: #ff719f;
 }
 
 input#submit-todos:hover{
     background: #a5d3f6;
 }
+
+li {
+    border: 1px solid transparent;
+    padding: 10px;
+    background: lightgray;
+    margin: 10px 20px;
+    list-style: none;
+}
+
+a.remove {
+    font-variant-caps: all-small-caps;
+    text-decoration: none;
+    margin-left: 50%;
+}
+
+@media only screen and (max-width: 1181px) {
+    
+    input#submit-todos {
+        width: 350px;
+        margin: 0px 0px 15px 15px;
+        background: #ff719f;
+    }
+  }
+  
+  @media only screen and (max-width: 975px) {
+    
+    input#submit-todos {
+        width: 250px;
+        background: #ff719f;
+    }
+    input#input-todos {
+        width: 250px;
+    }
+
+    .container {
+        margin: 10% 20%;
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 500px) {
+
+    .container {
+      
+        margin: 10% 10%;
+       
+    }
+}
+    
+  @media only screen and (max-width: 370px) {
+
+    .container {
+      
+        margin: 10% 2%;
+       
+    }
+}
+    

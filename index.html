@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Todos App: </title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -14,16 +15,15 @@
         <div class="div-wrap">
             <h1 class="h1-todos"> Grocery Bud </h1>
             <input type="text" id="input-todos" placeholder="Enter Task: ">
-            <input type="submit" id="submit-todos">
+            <input type="button" value="Submit" id="submit-todos" onclick="Operation_todos()">
             <br />
             <span id="Message"></span>
             
-            <div class="div_center_border">
-                <span id="Task_content"></span>
-            </div>
+            <ul id="box"></ul>
             
         </div>
     </div>
+
  <script src="script.js"></script>
 </body>
 </html>
