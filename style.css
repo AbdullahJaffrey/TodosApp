@@ -53,7 +53,7 @@ li {
     border: 1px solid transparent;
     padding: 10px;
     background: lightgray;
-    margin: 10px 20px;
+    margin: 10px 0px;
     list-style: none;
 }
 
@@ -63,12 +63,36 @@ a.remove {
     margin-left: 50%;
 }
 
+a.date {
+    font-size: 12px;
+    margin-left: 10px;
+    color: white;
+    background: green;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+
 @media only screen and (max-width: 1181px) {
     
     input#submit-todos {
         width: 350px;
         margin: 0px 0px 15px 15px;
         background: #ff719f;
+    }
+
+    li {
+        width: -webkit-fill-available;
+        margin: 30px;
+    }
+
+    a.date {
+        font-size: 8px;
+        margin-left: 5px;
+        color: white;
+        background: green;
+        border-radius: 25px;
+        padding: 3px 10px;
     }
   }
   
@@ -85,6 +109,20 @@ a.remove {
     .container {
         margin: 10% 20%;
     }
+
+    li {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.remove {
+        margin-left: 0%;
+        background: #ff719f;
+        width: 26%;
+        margin: 10px;
+    }
     
   }
 
@@ -96,6 +134,7 @@ a.remove {
         margin: 10% 10%;
        
     }
+
 }
     
   @media only screen and (max-width: 370px) {

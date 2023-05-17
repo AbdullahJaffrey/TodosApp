@@ -5,7 +5,7 @@ function Operation_todos(){
     let data = document.getElementById('input-todos').value;
     if (data === ''){
         document.getElementById('Message').innerText = 'Kindly, Enter some value!';
-        document.getElementById('Message').style.color = 'red';
+        document.getElementById('Message').style.color = '#ff719f';
     }
     else{
         document.getElementById('Message').innerText = 'Thanks for adding';        
@@ -18,6 +18,14 @@ function Operation_todos(){
         a.textContent='X'
         a.href='javascript:void(0)';
         a.className='remove';
+        // li.appendChild(a);
+
+        const date = new Date()
+        let now_date = date.toLocaleDateString();
+        let b = document.createElement('a');
+        b.className = 'date';
+        b.textContent = `Posted on ${now_date}`
+        li.appendChild(b);
         li.appendChild(a);
 
         let pos = box.firstElementChild;
